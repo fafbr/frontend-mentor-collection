@@ -1,0 +1,155 @@
+/* === 1. VARIABLES === */
+:root {
+    --nutmeg: #854632ff;
+    --dark-raspberry: #7b284fff;
+    --stone-100: #f3e6d8ff;
+    --stone-150: #e4ded8ff;
+    --stone-600: #5f574eff;
+    --stone-900: #302d2cff;
+    --rose-50: #fff5faff;
+    --white: #fff;
+}
+
+/* === 2. RESET === */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* === 3. GLOBAL STYLES === */
+body {
+    background-color: var(--stone-100);
+    font-family: 'Outfit', sans-serif;
+    color: var(--stone-600);
+    line-height: 1.5;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Young Serif', serif;
+    color: var(--stone-900);
+    font-weight: 400;
+}
+
+/* === 4. COMPONENT STYLES (Desktop Mode) === */
+
+/* KARTU RESEP */
+.recipe-card {
+    background-color: var(--white);
+    width: 736px; 
+    max-width: 100%;
+    margin: 40px auto; 
+    border-radius: 24px;
+    padding: 40px;
+}
+
+/* GAMBAR */
+.recipe-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* MAIN CONTENT */
+.recipe-content {
+    margin-top: 40px;
+}
+
+/* TITLE */
+.title {
+    color: var(--stone-900);
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.description {
+    margin-bottom: 32px;
+}
+
+/* PREP TIME */
+.prep-time-box {
+    background-color: var(--rose-50);
+    border-radius: 12px;
+    padding: 28px;
+    margin: 32px;
+}
+
+.prep-time-box h3 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--dark-raspberry);
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.prep-time-box ul li {
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+/* JUDUL SECTION */
+.section-title {
+    color: var(--nutmeg);
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+/* LIST UMUM */
+ul, ol {
+    padding-left: 24px;
+    margin-bottom: 32px;
+}
+
+li {
+    margin-bottom: 8px;
+    padding-left: 16px;
+}
+
+li::marker {
+    color: var(--nutmeg);
+    font-weight: bold;
+}
+
+ol li::marker {
+    font-family: 'Outfit', sans-serif;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--stone-150);
+    margin: 32px 0;
+}
+
+/* NUTRITION TABLE */
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-table td {
+    padding: 12px 32px;
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* KOLOM NILAI GIZI */
+.nutrition-table .value {
+    color: var(--nutmeg);
+    font-weight: 700;
+}

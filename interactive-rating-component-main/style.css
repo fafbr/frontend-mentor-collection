@@ -1,0 +1,160 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue:hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 24px;
+    margin: 0;
+}
+
+.card {
+    background: linear-gradient(to bottom , #232a34, #181e27);
+    padding: 24px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 327px;
+}
+
+/* utilitas sembunyikan state */
+.hidden {
+    display: none !important;
+}
+
+/* state 1 styles */
+.icon-star {
+    background-color: var(--dark-blue);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--light-grey);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/* container tombol bulat */
+.rating-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+/* tombol bulat */
+.rating-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rating-btn:hover {
+    background-color: var(--orange);
+    color: black;
+}
+
+/* class active saat tombol dipilih */
+.rating-btn.active {
+    background-color: white;
+    color: black;
+}
+
+/* tombol submit */
+.btn-submit {
+    width:  100%;
+    padding: 12px 0;
+    background-color: var(--orange);
+    color: black;
+    border: none;
+    border-radius: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: var(--orange);
+}
+
+/* state 2 styles */
+#thank-you-state {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-thankyou {
+    margin-bottom: 24px;
+    width: 140px;
+}
+
+.pill-result {
+    background-color: var(--dark-blue);
+    color: var(--orange);
+    padding: 5px 12px;
+    border-radius: 22px;
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+
+#ty-title {
+    color: white;
+    margin-bottom: 16px;
+}
+
+#ty-desc {
+    margin-bottom: 0;
+}
+
+/* === dekstop === */
+@media (min-width: 768px) {
+    .card {
+        max-width: 412px;
+        padding: 32px;
+    }
+
+    h1 {font-size: 28px;}
+    p {font-size: 15px;}
+
+    .rating-btn {
+        width: 51px;
+        height: 51px;
+        font-size: 16px;   
+    }
+}

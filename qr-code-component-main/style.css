@@ -1,0 +1,68 @@
+/* === CSS RESET & VARIABLES=== */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(216, 15%, 48%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --font-size-base: 15px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* === BODY & LAYOUT */
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--font-size-base);
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: var(--white);
+    width: 320px;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-header img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card-body {
+    padding: 24px 16px 16px 16px;
+}
+
+.card-title {
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.2;
+}
+
+.card-text {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    padding: 0 8px;
+    margin-bottom: 12px;
+}

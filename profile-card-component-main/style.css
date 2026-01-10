@@ -1,0 +1,105 @@
+/* CSS RESET & VARIABLES */
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --dark-graylish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --light-gray: #e8e8e8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling */
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.card-container {
+    background-color: white;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    text-align: center;
+    z-index: 10;
+}
+
+.card-header {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+}
+
+.profile-pic {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -53px;
+}
+
+.card-body {
+    padding: 25px 0;
+}
+
+.name {
+    color: var(--desaturated-blue);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.age {
+    color: var(--dark-graylish-blue);
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.city {
+    color: var(--dark-graylish-blue);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.card-stats {
+    border-top: 1px solid var(--light-gray);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+    margin-left: -15px;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.stat-number {
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.stat-label {
+    color: var(--dark-graylish-blue);
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+}
