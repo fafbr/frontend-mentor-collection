@@ -89,7 +89,7 @@ body {
 }
 
 @media (min-width: 600px) {
-    .card {width: 384px;}
+    .card {max-width: 384px;}
     
     .title {font-size: 1.5rem;}
 }
