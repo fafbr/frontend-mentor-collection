@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Article Preview Component",
+        "description": "Komponen kartu artikel dengan fitur share tooltip dan responsive layout.",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "liveLink": "./article-preview-component-master/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/article-preview-component-master"
+    },
+    
+    {
+        "title": "  QR Code Component",
+        "description": "Kartu sederhana menampilkan QR code, tantangan layout dasar untuk pemula.",
+        "techStack": ["HTML", "CSS"],
+        "liveLink": "./qr-code-component-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/qr-code-component-main"
+    }
+]
