@@ -25,23 +25,23 @@
       <img src="images/icon-star.svg" alt="Star">
     </div>
 
-    <h1 id="title-text">Loading...</h1>
-    <p id="desc-text"></p>
+    <h1 id="title-text" data-bind="title">Loading...</h1>
+    <p id="desc-text" data-bind="description"></p>
 
     <div id="rating-buttons-container" class="rating-group"></div>
 
-    <button id="submit-btn" class="btn-submit">Submit</button>
+    <button id="submit-btn" class="btn-submit" data-bind="buttonText">Submit</button>
   </div>
 
   <div id="thank-you-state" class="hidden">
     <img src="images/illustration-thank-you.svg" alt="Thank You" class="img-thankyou">
 
     <div class="pill-result">
-      You selected <span id="selected-rating-value">0</span> out of <span id="max-rating-value">5</span>
+      You selected <span id="selected-rating-value">0</span> out of <span id="max-rating-value" data-bind="maxRating">5</span>
     </div>
 
-    <h2 id="ty-title"></h2>
-    <p id="ty-desc"></p>
+    <h2 id="ty-title" data-bind="thankYouTitle"></h2>
+    <p id="ty-desc" data-bind="thankYouDescription"></p>
   </div>
 </main>
 
