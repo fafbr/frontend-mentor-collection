@@ -8,10 +8,74 @@
     },
     
     {
-        "title": "  QR Code Component",
+        "title": "QR Code Component",
         "description": "Kartu sederhana menampilkan QR code, tantangan layout dasar untuk pemula.",
         "techStack": ["HTML", "CSS"],
         "liveLink": "./qr-code-component-main/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/qr-code-component-main"
+    },
+    
+    {
+        "title": "Bento Grid Layout",
+        "description": "Implementasi tata letak bergaya grid modern menggunakan CSS Grid.",
+        "techStack": ["HTML", "CSS"],
+        "liveLink": "./bento-grid-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/bento-grid-main"
+    },
+    
+    {
+        "title": "Recipe Page",
+        "description": "Penerapan HTML semantik untuk menyajikan informasi resep yang terstruktur.",
+        "techStack": ["HTML", "CSS"],
+        "liveLink": "./recipe-page-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/recipe-page-main"
+    },
+    
+    {
+        "title": "Social Links Profile",
+        "description": "Pembuatan kartu profil sederhana yang memuat tautan media sosial.",
+        "techStack": ["HTML", "CSS"],
+        "liveLink": "./social-links-profile-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/social-links-profile-main"
+    },
+    
+    {
+        "title": "Blog Preview Card",
+        "description": "Perancangan komponen kartu pratinjau artikel yang memadukan gambar dan teks.",
+        "techStack": ["HTML", "CSS"],
+        "liveLink": "./blog-preview-card-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/blog-preview-card-main"
+    },
+    
+    {
+        "title": "FAQ Accordion",
+        "description": "Pengembangan komponen tanya-jawab interaktif dengan mekanisme buka-tutup (expand/collapse).",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "liveLink": "./faq-accordion-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/faq-accordion-main"
+    },
+    
+    {
+        "title": "Results Summary Component",
+        "description": "Komponen visualisasi data yang menampilkan ringkasan hasil evaluasi.",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "liveLink": "./results-summary-component-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/results-summary-component-main"
+    },
+    
+    {
+        "title": "Interactive Rating Component",
+        "description": "Antarmuka fitur pemberian peringkat (rating) berbasis angka yang umum digunakan pada aplikasi.",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "liveLink": "./interactive-rating-component-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/interactive-rating-component-main"
+    },
+    
+    {
+        "title": "Profile Card Component",
+        "description": "Kartu profil pengguna yang memuat informasi personal dan statistik sosial dengan elemen dekoratif.",
+        "techStack": ["HTML", "CSS"],
+        "liveLink": "./profile-card-component-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/profile-card-component-main"
     }
 ]
