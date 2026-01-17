@@ -77,5 +77,13 @@
         "techStack": ["HTML", "CSS"],
         "liveLink": "./profile-card-component-main/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/profile-card-component-main"
+    },
+
+    {
+        "title": "Base Apparel Coming Soon Page",
+        "description": "Halaman Coming Soon responsif dengan validasi email menggunakan JavaScript",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "liveLink": "./base-apparel-coming-soon-master/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/base-apparel-coming-soon-master"
     }
 ]
