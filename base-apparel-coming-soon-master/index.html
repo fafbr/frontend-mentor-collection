@@ -2,32 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <div class="main-container">
 
-  We're coming soon
+    <div class="content-col">
+      <header class="logo-area">
+        <img src="images/logo.svg" alt="Base Apparel Logo" class="logo">
+      </header>
+      
+      <div class="hero-mobile">
+        <img src="images/hero-mobile.jpg" alt="Model Fashion">
+      </div>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+      <main class="text-content">
+        <h1>
+          <span>We're</span>
+          coming soon
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
 
-  Email Address
-  
-  <footer>
+        <form id="email-form" class="email-form" novalidate>
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Email Address" aria-label="Email Address">
+            <img src="images/icon-error.svg" class="error-icon" alt="">
+            <button type="submit" aria-label="Submit Email">
+              <img src="images/icon-arrow.svg" alt="">
+            </button>
+          </div>
+          <p class="error-msg">Please provide a valid email</p>
+        </form>
+      </main>
+    </div>
+
+    <div class="image-col"></div>
+
+  </div>
+
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
+
+  <script src="script.js"></script>
+
 </body>
 </html>
