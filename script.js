@@ -61,3 +61,25 @@ seacrhInput.addEventListener('input', (e) => {
 });
 
 loadProjects();
+
+const themeBtn = document.getElementById('theme-toggle');
+const rootElement = document.documentElement;
+
+const savedTheme = localStorage.getItem('theme');
+if(savedTheme === 'light') {
+    rootElement.setAttribute('data-theme', 'light')
+}
+
+themeBtn.addEventListener('click', () => {
+    const isLightMode = rootElement.getAttribute('data-theme') === 'light';
+
+    if(isLightMode) {
+        rootElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        rootElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+});
+
+feather.replace();
