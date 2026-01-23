@@ -85,5 +85,13 @@
         "techStack": ["HTML", "CSS", "JavaScript"],
         "liveLink": "./base-apparel-coming-soon-master/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/base-apparel-coming-soon-master"
+    },
+
+    {
+        "title": "Contact Form",
+        "description": "Formulir kontak dengan fitur validasi input yang umum digunakan untuk memfasilitasi komunikasi pengguna pada situs web.",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "liveLink": "./contact-form-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/contact-form-main"
     }
 ]
