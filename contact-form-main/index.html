@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Contact form</title>
 
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,38 +19,82 @@
   </style>
 </head>
 <body>
+<main class="container">
 
-  Contact Us
+  <div class="contact-card">
+    <h1>Contact Us</h1>
+    <form id="contactForm" novalidate>
 
-  First Name
-  This field is required
+      <div class="form-row">
+        <div class="form-control">
+          <label for="firstName">First Name <span class="asterisk">*</span></label>
+          <input type="text" id="firstName" class="first-name">
+          <p class="error-msg">This field is required</p>
+        </div>
+        
+        <div class="form-control">
+          <label for="lastName">Last Name <span class="asterisk">*</span></label>
+          <input type="text" id="lastName" class="last-name">
+          <p class="error-msg">This field is required</p>
+        </div>
+      </div>
 
-  Last Name
-  This field is required
+      <div class="form-control">
+        <label for="email">Email Address <span class="asterisk">*</span></label>
+        <input type="email" id="email" name="email">
+        <p class="error-msg">Please enter a valid email address </p>
+      </div>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+      <div class="form-control">
+        <label class="query-label">Query Type <span class="asterisk">*</span></label>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+        <div class="radio-group">
+          <div class="radio-wrapper">
+            <input type="radio" id="general" name="queryType" value="general">
+            <label for="general">General Enquirity</label>
+          </div>
 
-  Message
-  This field is required
+          <div class="radio-wrapper">
+            <input type="radio" id="support" name="queryType" value="support">
+            <label for="support">Suppport Request</label>
+          </div>
+        </div>
+        <p class="error-msg">Please select a query type</p>
+      </div>
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
+      <div class="form-control">
+        <label for="message">Message <span class="asterisk">*</span></label>
+        <textarea name="message" id="message" rows="4"></textarea>
+        <p class="error-msg">This field is required</p>
+      </div>
 
-  Submit
+      <div class="form-control consent-control">
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="consent" name="consent">
+          <label for="consent">I consent to being contracted by the team <span class="asterisk">*</span></label>
+        </div>
+        <p class="error-msg">To submit this form, please consent to being contracted</p>
+      </div>
 
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
+      <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+  </div>
+</main>
+
+<div id="successToast" class="toast hidden">
+  <div class="toast-header">
+    <img src="assets/images/icon-success-check.svg" alt="success">
+    <span>Message Sent!</span>
+  </div>
+  <p>Thanks for completing the form. We'll be in touch soon!</p>
+</div>
+ 
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+  <script src="script.js"></script>
 </body>
 </html>
