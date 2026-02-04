@@ -93,5 +93,13 @@
         "techStack": ["HTML", "CSS", "JavaScript"],
         "liveLink": "./contact-form-main/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/contact-form-main"
+    },
+    
+    {
+        "title": "Intro section with dropdown navigation",
+        "description": "Landing page responsif dengan navigasi dropdown, dibangun menggunakan Mobile-First CSS Grid dan Vanilla JS.",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "liveLink": "./intro-section-with-dropdown-navigation-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/intro-section-with-dropdown-navigation-main"
     }
 ]
