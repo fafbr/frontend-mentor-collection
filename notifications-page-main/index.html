@@ -5,39 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Notifications page</title>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="container">
+    <header class="header">
+      <div class="header-left">
+        <h1>Notifications</h1>
+        <span id="notif-count">3</span>
+      </div>
+      <button id="mark-all">Mark all as read</button>
+    </header>
 
-  Notifications 3
+    <div class="notification-list">
+      <article class="notification unread">
+        <img src="assets/images/avatar-mark-webber.webp" alt="Mark Webber" class="avatar">
+        <div class="notif-content">
+          <p>
+            <span class="name">Mark Webber</span> reacted to your recent post 
+            <span class="action">My first tournamentn today!</span>
+            <span class="dot"></span>
+          </p>
+          <span class="time">1 m ago</span>
+        </div>
+      </article>
+      
+      <article class="notification unread">
+        <img src="assets/images/avatar-angela-gray.webp" alt="Angela Gray" class="avatar">
+        <div class="notif-content">
+          <p>
+            <span class="name">Angela Gray</span> followed you 
+            <span class="dot"></span>
+          </p>
+          <span class="time">5 m ago</span>
+        </div>
+      </article>
+      
+      <article class="notification unread">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson" class="avatar">
+        <div class="notif-content">
+          <p>
+            <span class="name">Jacob Thompson</span> has joined your group
+            <span class="group">Chess Club</span>
+            <span class="dot"></span>
+          </p>
+          <span class="time">1 day ago</span>
+        </div>
+      </article>
+      
+      <article class="notification">
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin" class="avatar">
+        <div class="notif-content">
+          <p><span class="name">Rizky Hasanuddin</span> sent you a private message</p>
+          <span class="time">5 days ago</span>
+          <div class="message">
+            Hello, thanks for setting up the Ches Club. I've been a member for a few weeks now and i'm already having lots of fun and improving my game.
+          </div>
+        </div>
+      </article>
 
-  Mark all as read
+      <article class="notification picture-notif">
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith" class="avatar">
+        <div class="notif-content">
+          <p>
+            <span class="name">Kimberly Smith</span> commented on your picture</p>
+          <span class="time">1 week ago</span>
+        </div>
+        <img src="assets/images/image-chess.webp" alt="Chess" class="commented-img">
+      </article>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+      <article class="notification">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson" class="avatar">
+        <div class="notif-content">
+          <p>
+            <span class="name">Nathan Peterson</span> Reacted to your recent post <b>5 end-game strategies to inrease your winrate</b>
+          </p>
+          <span class="time">2 weeks ago</span>
+        </div>
+      </article>
 
-  Angela Gray followed you
-  5m ago
+      <article class="notification">
+        <img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim" class="avatar">
+        <div class="notif-content">
+          <p>
+            <span class="name">Anna Kim</span> Left the group <b>Chess Club</b>
+          </p>
+          <span class="time">2 weeks ago</span>
+        </div>
+      </article>
+      
+    </div>
+  </main>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-
+  <script src="script.js"></script>
 </body>
 </html>
