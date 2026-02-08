@@ -109,5 +109,13 @@
         "techStack": ["HTML", "CSS", "JavaScript"],
         "liveLink": "./notifications-page-main/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/notifications-page-main"
+    },
+    
+    {
+        "title": "Clipboard Landing Page",
+        "description": "Pengembangan halaman landas (landing page) yang responsif dengan fokus pada tata letak yang bersih dan modern.",
+        "techStack": ["HTML", "CSS"],
+        "liveLink": "./clipboard-landing-page-master/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/clipboard-landing-page-master"
     }
 ]
