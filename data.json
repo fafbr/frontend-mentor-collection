@@ -117,5 +117,13 @@
         "techStack": ["HTML", "CSS"],
         "liveLink": "./clipboard-landing-page-master/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/clipboard-landing-page-master"
+    },
+
+    {
+        "title": "Browser Extension Manager UI",
+        "description": "Pengembangan antarmuka manajemen ekstensi peramban yang interaktif.",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "liveLink": "./browser-extensions-manager-ui-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/browser-extensions-manager-ui-main"
     }
 ]
