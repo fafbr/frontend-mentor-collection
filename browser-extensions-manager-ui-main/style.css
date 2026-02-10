@@ -1,0 +1,205 @@
+:root {
+    --n-900: hsl(227, 75%, 14%);
+    --n-800: hsl(226, 25%, 17%);
+    --n-700: hsl(225, 23%, 24%);
+    --n-600: hsl(226, 11%, 37%);
+    --n-300: hsl(0, 0%, 78%);
+    --n-200: hsl(217, 61%, 90%);
+    --n-100: hsl(0, 0%, 93%);
+    --n-0: hsl(200, 60%, 99%);
+    --red-500: #e34c4c;
+    --green-status: #4caf50;
+
+    --bg-body: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+    --bg-nav: #ffffff;
+    --bg-card: #ffffff;
+    --text-main: var(--n-900);
+    --text-sub: var(--n-600);
+    --border-color: var(--n-200);
+    --filter-bg: var(--n-100);
+}
+
+body.theme-dark {
+    --bg-body: #0a0e1a;
+    --bg-nav: #161b2a;
+    --bg-card: #1c2237;
+    --text-main: #ffffff;
+    --text-sub: var(--n-300);
+    --border-color: #2d344b;
+    --filter-bg: #161b2a;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Noto Sans", sans-serif;
+    background: var(--bg-body);
+    background-attachment: fixed;
+    color: var(--text-main);
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.navbar {
+    background: var(--bg-nav);
+    padding: 1.25rem 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 3rem;
+}
+.nav-content,
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand {
+    gap: 0.75rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.theme-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.filter-nav {
+    background: var(--filter-bg);
+    padding: 4px;
+    border-radius: 100px;
+    display: flex;
+}
+.filter-btn {
+    background: none;
+    border: none;
+    color: var(--text-sub);
+    padding: 0.5rem 1.5rem;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+}
+.filter-btn.active {
+    background: var(--red-500);
+    color: white;
+}
+
+.extensions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+@media (min-width: 768px) {
+    .extensions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .extensions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.extension-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: transform 0.3s ease;
+}
+.card-top {
+    display: flex;
+    gap: 1rem;
+    }
+.ext-logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    }
+.ext-info h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+    }
+.ext-info p {
+    font-size: 0.875rem;
+    color: var(--text-sub);
+    line-height: 1.4;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remove-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.remove-btn:hover {
+    background: var(--red-500);
+    color: white;
+    border-color: var(--red-500);
+}
+
+.switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--n-300);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+input:checked + .slider {
+    background-color: var(--red-500);
+}
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
