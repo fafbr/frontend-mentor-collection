@@ -2,56 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Typing Speed Test</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <main class="app-container">
+    <header class="stats-bar">
+      <div class="stat"><span class="label">WPM</span><span id="wpm">0</span></div>
+      <div class="stat"><span class="label">ACCURACY</span><span id="accuracy">100</span>%</div>
+      <div class="stat"><span class="label">TIME</span><span id="timer">60</span>s</div>
+    </header>
 
-  Personal best: <!-- PB --> WPM
+    <div class="controls">
+      <select id="difficulty-select">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <select id="mode-select">
+        <option value="timed">Timed (60s)</option>
+        <option value="passage">Passage</option>
+      </select>
+      <button id="restart-btn">↺</button>
+    </div>
 
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Time: <!-- Time -->
+    <div class="typing-box" id="typing-trigger">
+      <input type="text" id="hidden-input" autocomplete="off" spellcheck="false">
+      <div id="text-display" class="text-display">Loading passage...</div>
+    </div>
 
-  Difficulty:
-  Easy
-  Medium
-  Hard
+    <div class="pb-display">Personal Best: <span id="best-wpm">0</span> WPM</div>
+  </main>
 
-  Mode:
-  Timed (60s)
-  Passage
-
-  <!-- Passage -->
-
-  Start Typing Test
-  Or click the text and start typing
-
-  <!-- Test Complete Start -->
-
-  Test Complete!
-  Solid run. Keep pushing to beat your high score.
-
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Characters: <!-- Correct/Incorrect -->
-
-  Go Again
-  
-  <!-- Test Complete End -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div id="result-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-title">Test Complete!</h2>
+      <div class="final-stats">
+        <div class="m-stat"><p>WPM</p><span id="final-wpm">0</span></div>
+        <div class="m-stat"><p>Accuracy</p><span id="final-acc">0%</span></div>
+      </div>
+      <button id="close-modal">Try Again</button>
+    </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

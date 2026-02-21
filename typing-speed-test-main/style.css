@@ -1,0 +1,37 @@
+:root {
+  --bg: hsl(0, 0%, 7%); --card: hsl(0, 0%, 15%);
+  --text-muted: hsl(240, 1%, 59%); --text-main: hsl(0, 0%, 100%);
+  --blue: hsl(214, 100%, 55%); --red: hsl(354, 63%, 57%); --green: hsl(140, 63%, 57%);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Sora', sans-serif; background: var(--bg); color: var(--text-main); display: flex; justify-content: center; padding: 20px; }
+.app-container { width: 100%; max-width: 375px; display: flex; flex-direction: column; gap: 20px; }
+
+.stats-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.stat { background: var(--card); padding: 15px; border-radius: 12px; text-align: center; }
+.label { display: block; font-size: 10px; color: var(--text-muted); font-weight: 600; }
+.stat span:not(.label) { font-size: 20px; font-weight: 700; color: var(--blue); }
+
+.controls { display: flex; gap: 10px; }
+select, #restart-btn { background: var(--card); color: #fff; border: 1px solid #444; padding: 10px; border-radius: 8px; cursor: pointer; flex: 1; }
+#restart-btn { flex: 0.2; font-size: 18px; }
+
+.typing-box { background: var(--card); padding: 25px; border-radius: 16px; min-height: 200px; position: relative; cursor: text; }
+#hidden-input { position: absolute; opacity: 0; pointer-events: none; }
+.text-display { font-size: 18px; line-height: 1.6; color: var(--text-muted); word-break: break-word; }
+
+.char { position: relative; }
+.char.correct { color: var(--green); }
+.char.incorrect { color: var(--red); text-decoration: underline; }
+.char.current { color: var(--text-main); }
+.char.current::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 100%; height: 2px; background: var(--blue); }
+
+.pb-display { text-align: center; color: var(--text-muted); font-size: 14px; }
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 100; }
+.hidden { display: none; }
+.modal-content { background: var(--card); padding: 40px; border-radius: 20px; text-align: center; width: 90%; max-width: 400px; }
+.final-stats { display: flex; justify-content: space-around; margin: 20px 0; }
+#close-modal { background: var(--blue); color: #fff; border: none; padding: 12px 30px; border-radius: 8px; font-weight: 700; cursor: pointer; }
+
+@media (min-width: 768px) { .app-container { max-width: 800px; } .text-display { font-size: 24px; } }
