@@ -125,5 +125,13 @@
         "techStack": ["HTML", "CSS", "JavaScript"],
         "liveLink": "./browser-extensions-manager-ui-main/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/browser-extensions-manager-ui-main"
+    },
+
+    {
+        "title": "Ticket Generator",
+        "description": "Pembuatan antarmuka pembuat tiket digital yang interaktif.",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "liveLink": "./conference-ticket-generator-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/conference-ticket-generator-main"
     }
 ]
