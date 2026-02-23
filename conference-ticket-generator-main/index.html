@@ -2,47 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Conference ticket generator</title>
 
 </head>
 <body>
+  <div class="bg-patterns">
+    <img src="assets/images/pattern-lines.svg" class="pattern-lines" alt="" aria-hidden="true">
+    <img src="assets/images/pattern-squiggly-line-top.svg" class="pattern-top" alt="" aria-hidden="true">
+    <img src="assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" class="pattern-bottom" alt="" aria-hidden="true">
+  </div>
 
-  <!-- Form starts -->
+  <header>
+    <img src="assets/images/logo-full.svg" alt="Coding Conf Logo" class="logo">
+  </header>
 
-  Your Journey to Coding Conf 2025 Starts Here!
+  <main>
+    <section id="form-section" class="active">
+      <div class="hero-text">
+        <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p>Secure your spot at next year's biggest coding conference.</p>
+      </div>
 
-  Secure your spot at next year's biggest coding conference.
+      <form id="ticket-form" novalidate>
+        
+        <div class="form-group" id="group-avatar">
+          <label>Upload Avatar</label>
+          <div class="upload-area" id="drop-zone" tabindex="0">
+            <input type="file" id="avatar" accept="image/jpeg, image/png" hidden>
+            
+            <div id="upload-prompt">
+              <img src="assets/images/icon-upload.svg" alt="Upload Icon">
+              <p>Drag and drop or click to upload</p>
+            </div>
+            
+            <div id="upload-preview" class="hidden">
+              <img id="avatar-img-preview" src="" alt="Avatar Preview">
+              <div class="action-buttons">
+                <button type="button" id="btn-remove-img">Remove image</button>
+                <button type="button" id="btn-change-img">Change image</button>
+              </div>
+            </div>
+          </div> <div class="info-text" id="avatar-info">
+            <img src="assets/images/icon-info.svg" alt="info"> Upload your photo (JPG or PNG, max size: 500kb).
+          </div>
+        </div> <div class="form-group" id="group-name">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" required>
+          <div class="error-msg">Please enter your full name.</div>
+        </div>
 
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
+        <div class="form-group" id="group-email">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="example@email.com" required>
+          <div class="error-msg">Please enter a valid email address.</div>
+        </div>
+          
+        <div class="form-group" id="group-github">
+          <label for="gitHub">GitHub Username</label>
+          <input type="text" id="gitHub" placeholder="@yourusername" required>
+          <div class="error-msg">Please enter your GitHub username.</div>
+        </div>
 
-  Full Name
+        <button type="submit" class="btn-submit">Generate My Ticket</button>
+      
+      </form>
+    </section>
 
-  Email Address
-  example@email.com
+    <section id="ticket-section" class="hidden">
+      <div class="hero-text">
+        <h1>Congrats, <span class="text-gradient" id="display-name-hero"></span>! Your ticket is ready.</h1>
+        <p>We've emailed your ticket to <span class="text-primary" id="display-email"></span> and will send updates in the run up to the event.</p>
+      </div>
 
-  GitHub Username
-  @yourusername
+      <div class="ticket-wrapper">
+        <img src="assets/images/pattern-ticket.svg" alt="Ticket Background" class="ticket-bg">
+        <div class="ticket-content">
+          <div class="ticket-header">
+            <img src="assets/images/logo-full.svg" alt="Coding Conf Logo">
+            <p class="ticket-date">Jan 31, 2025 / Austin, TX</p>
+          </div>
+          <div class="ticket-user">
+            <img id="display-avatar" src="" alt="User Avatar">
+            <div class="user-details">
+              <h2 id="display-fullname"></h2>
+              <p class="github-handle">
+                <img src="assets/images/icon-github.svg" alt="GitHub">
+                <span id="display-github"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="ticket-number" id="display-ticket-number"></div>
+      </div>
+    </section>
+  </main>
 
-  Generate My Ticket
-
-  <!-- Form ends -->
-
-  <!-- Generated tickets starts -->
-
-  Congrats, <!-- Full Name -->! Your ticket is ready.
-
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
-
-  <!-- Generated tickets ends -->
-  
+  <script src="script.js"></script>
 </body>
 </html>
