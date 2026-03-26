@@ -138,8 +138,16 @@
     {
         "title": "IP Address Tracker",
         "description": "Pembuatan aplikasi web pelacak IP address dan domain yang terintegrasi dengan API untuk menampilkan data lokasi pada peta interaktif.",
-        "techStack": ["HTML", "CSS", "JavaScript", "API"],
+        "techStack": ["React", "Tailwind CSS", "Vite", "API"],
         "liveLink": "./ip-address-tracker-master/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/ip-address-tracker-master"
+    },
+
+    {
+        "title": "Advice Generator App",
+        "description": "Pembuatan aplikasi front-end penghasil nasihat acak yang terintegrasi dengan API untuk melakukan fetch dan menampilkan data teks secara dinamis.",
+        "techStack": ["React", "Tailwind CSS", "Vite", "API"],
+        "liveLink": "./advice-generator-app-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/advice-generator-app-main"
     }
 ]
