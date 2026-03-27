@@ -149,5 +149,12 @@
         "techStack": ["React", "Tailwind CSS", "Vite", "API"],
         "liveLink": "./advice-generator-app-main/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/advice-generator-app-main"
+    },
+    {
+        "title": "Testimonials Grid Section",
+        "description": "Pembuatan antarmuka front-end statis untuk menampilkan kumpulan testimoni dengan fokus pada implementasi tata letak responsif menggunakan CSS Grid.",
+        "techStack": ["HTML", "Tailwind CSS", "Vite"],
+        "liveLink": "./testimonials-grid-section-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/testimonials-grid-section-main"
     }
 ]
