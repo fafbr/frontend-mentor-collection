@@ -150,11 +150,20 @@
         "liveLink": "./advice-generator-app-main/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/advice-generator-app-main"
     },
+
     {
         "title": "Testimonials Grid Section",
         "description": "Pembuatan antarmuka front-end statis untuk menampilkan kumpulan testimoni dengan fokus pada implementasi tata letak responsif menggunakan CSS Grid.",
         "techStack": ["HTML", "Tailwind CSS", "Vite"],
         "liveLink": "./testimonials-grid-section-main/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/testimonials-grid-section-main"
+    },
+
+    {
+        "title": "Social Media Dashboard with Theme Switcher",
+        "description": "Pembuatan antarmuka front-end responsif untuk dashboard media sosial, berfokus pada arsitektur component-based dan implementasi fitur theme switcher (dark/light mode) terintegrasi menggunakan state management React dan Tailwind CSS.",
+        "techStack": ["React", "Tailwind CSS", "Vite"], 
+        "liveLink": "./social-media-dashboard-with-theme-switcher-master/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/social-media-dashboard-with-theme-switcher-master"
     }
 ]
