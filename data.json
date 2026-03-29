@@ -165,5 +165,13 @@
         "techStack": ["React", "Tailwind CSS", "Vite"], 
         "liveLink": "./social-media-dashboard-with-theme-switcher-master/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/social-media-dashboard-with-theme-switcher-master"
+    },
+
+    {
+        "title": "Age Calculator App",
+        "description": "Pengembangan antarmuka front-end responsif untuk aplikasi kalkulator umur, berfokus pada arsitektur component-based dan penanganan logika validasi tanggal yang presisi (error handling). Terintegrasi menggunakan state management React dan utilitas styling Tailwind CSS.",
+        "techStack": ["React", "Tailwind CSS", "Vite"],
+        "liveLink": "./age-calculator-app-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/age-calculator-app-main"
     }
 ]
