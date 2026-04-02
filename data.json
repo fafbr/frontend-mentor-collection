@@ -173,5 +173,13 @@
         "techStack": ["React", "Tailwind CSS", "Vite"],
         "liveLink": "./age-calculator-app-main/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/age-calculator-app-main"
+    },
+
+    {
+        "title": "Sunnyside Agency Landing Page",
+        "description": "Pengembangan antarmuka front-end responsif untuk landing page agensi kreatif, berfokus pada arsitektur component-based serta eksekusi layout modern yang kompleks menggunakan kombinasi Flexbox dan CSS Grid secara presisi.",
+        "techStack": ["React", "Tailwind CSS", "Vite"],
+        "liveLink": "./sunnyside-agency-landing-page-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/sunnyside-agency-landing-page-main"
     }
 ]
