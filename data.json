@@ -177,9 +177,17 @@
 
     {
         "title": "Sunnyside Agency Landing Page",
-        "description": "Pengembangan antarmuka front-end responsif untuk landing page agensi kreatif, berfokus pada arsitektur component-based serta eksekusi layout modern yang kompleks menggunakan kombinasi Flexbox dan CSS Grid secara presisi.",
+        "description": "Membangun front-end landing page responsif untuk agensi kreatif menggunakan arsitektur component-based serta eksekusi layout presisi dengan Flexbox dan CSS Grid.",
         "techStack": ["React", "Tailwind CSS", "Vite"],
         "liveLink": "./sunnyside-agency-landing-page-main/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/sunnyside-agency-landing-page-main"
+    },
+
+    {
+        "title": "Loopstudios Landing Page",
+        "description": "Membangun front-end landing page responsif untuk studio virtual reality dengan fokus pada arsitektur component-based dan eksekusi efek hover interaktif yang modern.",
+        "techStack": ["React", "Tailwind CSS", "Vite"],
+        "liveLink": "./loopstudios-landing-page-main/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/loopstudios-landing-page-main"
     }
 ]
