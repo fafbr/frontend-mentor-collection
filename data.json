@@ -189,5 +189,13 @@
         "techStack": ["React", "Tailwind CSS", "Vite"],
         "liveLink": "./loopstudios-landing-page-main/index.html",
         "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/loopstudios-landing-page-main"
+    },
+
+    {
+        "title": "Wedding Invitation",
+        "description": "Wedding Ivitation PSI",
+        "techStack": ["React", "Tailwind CSS", "Vite"],
+        "liveLink": "./Wedding-Invitation/index.html",
+        "repoLink": "https://github.com/fafbr/frontend-mentor-collection/tree/main/Wedding-Invitation"
     }
 ]
